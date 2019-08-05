@@ -1,0 +1,33 @@
+.my-navbar {
+  background-color: rgba(255, 255, 255, 1.00);
+  box-shadow: 0 0 5px #657786;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.nav-link {
+  position: relative;
+  padding: 1rem 1rem !important;
+}
+
+.nav-link.active span {
+  color: rgb(29, 161, 241);
+  font-weight: 600;
+}
+
+.nav-link.active:after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 4px;
+  background: #0084ff;
+  content: "";
+}
+
+
+@media (max-width: 992px) {
+  .my-navbar{
+    padding: .5rem 1rem;
+  }
+}
