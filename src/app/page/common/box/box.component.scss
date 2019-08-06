@@ -1,0 +1,29 @@
+
+ul{
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+
+  .box{
+    .box-detail{
+      h4{
+        font-size: 14px;
+        width: 100%;
+      }
+      p{
+        font-size: 12px;
+        color: #999999;
+        width: 100%;
+        max-height: 19px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .box:hover{
+    //box-shadow: 20px 4px 20px 4px #ddd;
+  }
+
+}
+

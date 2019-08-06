@@ -1,0 +1,26 @@
+.classical{
+  padding: 15px;
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  width: 100%;
+
+  .classical-header {
+
+    .classical-title{
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .more{
+      i {
+        padding-left: 5px;
+        font-size: 18px;
+      }
+      color: #999999;
+    }
+
+    .more:hover{
+      color: rgb(29, 161, 241);
+    }
+  }
+}
