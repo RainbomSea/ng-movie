@@ -1,0 +1,21 @@
+ul{
+  display: flex;
+  flex-wrap: wrap;
+
+  .thumb{
+    a {
+      display: block;
+    }
+    .thumb-detail{
+      p{
+        a{
+          font-size: 14px;
+        }
+      }
+      max-height: 37px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+}

@@ -5,8 +5,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NewClassicalComponent } from './new-classical/new-classical.component';
-import {BoxComponent} from '../common/box/box.component';
-import {SidebarComponent} from '../common/sidebar/sidebar.component';
+import {ShareModule} from '../share/share.module';
 
 
 @NgModule({
@@ -14,15 +13,14 @@ import {SidebarComponent} from '../common/sidebar/sidebar.component';
     DashboardComponent,
     CarouselComponent,
     NewClassicalComponent,
-    BoxComponent,
-    SidebarComponent
-  ],
-  exports: [
-    DashboardComponent
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    ShareModule
+  ],
+  exports: [
+    DashboardComponent
   ]
 })
 export class DashboardModule { }

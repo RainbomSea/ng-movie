@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { CommonModule } from '@angular/common';
+
 import { BoxComponent } from './box/box.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import {ShareRoutingModule} from './share-routing.module';
 import { ThumbComponent } from './thumb/thumb.component';
 
 
@@ -13,16 +16,17 @@ import { ThumbComponent } from './thumb/thumb.component';
     FooterComponent,
     BoxComponent,
     SidebarComponent,
-    ThumbComponent
+    ThumbComponent,
   ],
   imports: [
+    CommonModule,
+    ShareRoutingModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     BoxComponent,
-    SidebarComponent,
-    ThumbComponent
+    SidebarComponent
   ]
 })
-export class CommonModule { }
+export class ShareModule { }

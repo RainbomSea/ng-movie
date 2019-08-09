@@ -3,18 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HeaderComponent} from './page/common/header/header.component';
-import {FooterComponent} from './page/common/footer/footer.component';
+import {ShareModule} from './page/share/share.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ShareModule
   ],
   providers: [],
   bootstrap: [AppComponent]
