@@ -17,3 +17,11 @@ ng server
 ### 主页
 
 ![](src/assets/img/home-page.png)
+
+### 列表详情页
+
+![](src/assets/img/list-dedail.png)
+
+### 搜索页面
+
+![](src/assets/img/search.png)
