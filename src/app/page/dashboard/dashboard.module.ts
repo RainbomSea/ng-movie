@@ -20,7 +20,8 @@ import {ShareModule} from '../share/share.module';
     ShareModule
   ],
   exports: [
-    DashboardComponent
+    DashboardComponent,
+    NewClassicalComponent
   ]
 })
 export class DashboardModule { }

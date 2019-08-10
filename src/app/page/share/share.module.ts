@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {ShareRoutingModule} from './share-routing.module';
 import { ThumbComponent } from './thumb/thumb.component';
+import { NavComponent } from './nav/nav.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 
 
@@ -17,6 +19,8 @@ import { ThumbComponent } from './thumb/thumb.component';
     BoxComponent,
     SidebarComponent,
     ThumbComponent,
+    NavComponent,
+    PaginationComponent,
   ],
   imports: [
     CommonModule,
@@ -26,7 +30,9 @@ import { ThumbComponent } from './thumb/thumb.component';
     HeaderComponent,
     FooterComponent,
     BoxComponent,
-    SidebarComponent
+    SidebarComponent,
+    NavComponent,
+    PaginationComponent,
   ]
 })
 export class ShareModule { }
