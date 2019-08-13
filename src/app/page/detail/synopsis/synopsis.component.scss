@@ -1,0 +1,22 @@
+.synopsis{
+  padding: 15px;
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  width: 100%;
+  font-size: 14px;
+
+  .synopsis-header {
+    .synopsis-title{
+      margin: 0;
+      font-size: 18px;
+      i{
+        color: #ccc;
+      }
+    }
+  }
+
+  .synopsis-content{
+    color: #666666;
+  }
+
+}

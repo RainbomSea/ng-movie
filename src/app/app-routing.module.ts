@@ -16,6 +16,8 @@ const routes: Routes = [
   {path: 'variety', loadChildren: './page/variety/variety.module#VarietyModule'},
   // 动画列表页面
   {path: 'anime', loadChildren: './page/anime/anime.module#AnimeModule'},
+  // 详情页
+  {path: 'detail', loadChildren: './page/detail/detail.module#DetailModule'}
 ];
 
 @NgModule({

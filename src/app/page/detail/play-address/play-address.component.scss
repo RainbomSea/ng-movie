@@ -1,0 +1,32 @@
+.address{
+  padding: 15px;
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  width: 100%;
+  font-size: 14px;
+
+  .address-header {
+    .address-title{
+      margin: 0;
+      font-size: 18px;
+      i{
+        color: #000;
+      }
+    }
+  }
+
+  .address-content{
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        margin-bottom: 10px;
+        margin-right: 10px;
+        a{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+}
