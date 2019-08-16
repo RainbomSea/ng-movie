@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieComponent implements OnInit {
 
+  title = 'movie';
+
   constructor() { }
 
   ngOnInit() {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-new-classical',
@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewClassicalComponent implements OnInit {
 
-  title: string;
+  // 最新分类数据
+  @Input()
+  classical_list: any = [];
 
   constructor() {
   }
 
   ngOnInit() {
-    this.title = '最新电影';
   }
 }

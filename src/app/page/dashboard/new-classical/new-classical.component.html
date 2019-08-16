@@ -1,12 +1,12 @@
-<div class="classical">
+<div class="classical mb-4" *ngFor="let classical of  classical_list">
   <div class="classical-header">
-    <a class="more float-right" routerLink="/dashboard"><span>更多</span><i class="fa fa-angle-right"></i></a>
+    <a class="more float-right" [routerLink]="classical.link"><span>更多</span><i class="fa fa-angle-right"></i></a>
     <h3 class="classical-title">
-      <a routerLink="/dashboard"><span><i class="fa fa-tv pr-2"></i>{{ title }}</span></a>
+      <a [routerLink]="classical.link"><span><i class="fa fa-tv pr-2"></i>{{ classical.name }}</span></a>
     </h3>
     <hr>
   </div>
   <div class="classical-content">
-    <app-box></app-box>
+    <app-box [title]="classical.title"></app-box>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CommonService} from '../../services/common.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  // 轮播数据
+  carousel_list: any = [];
+
+  // 最新分类数据
+  classical_list: any = [];
+
+  constructor(private common: CommonService) {
+    this.carousel_list = this.common.get_carousel_list();
+    this.classical_list = this.common.get_classical_list();
+  }
 
   ngOnInit() {
   }
